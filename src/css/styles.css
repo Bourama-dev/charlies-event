@@ -1042,6 +1042,210 @@ body {
     transform: translateY(-2px) scale(1.02);
 }
 
+/* Intro Section */
+.intro-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.02) 0%, rgba(26, 26, 26, 0.3) 100%);
+    text-align: center;
+}
+
+.section-lead {
+    font-size: 18px;
+    color: var(--text-primary);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Prestations Section */
+.prestation-section {
+    padding: 100px 20px;
+    position: relative;
+}
+
+.prestation-section.alt {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.03) 0%, rgba(26, 26, 26, 0.2) 100%);
+}
+
+.prestation-header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: slideInUp 0.8s ease;
+}
+
+.prestation-objective {
+    font-size: 20px;
+    color: var(--accent-gold);
+    margin-top: 15px;
+    font-style: italic;
+    animation: slideInUp 0.8s ease 0.1s both;
+    opacity: 0;
+}
+
+.prestation-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prestation-text {
+    animation: slideInUp 0.8s ease 0.2s both;
+    opacity: 0;
+}
+
+.prestation-text > p:first-of-type {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.prestation-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    padding: 30px;
+    background: rgba(201, 168, 76, 0.05);
+    border: 1px solid rgba(201, 168, 76, 0.15);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    animation: scaleIn 0.6s ease;
+}
+
+.service-item:hover {
+    background: rgba(201, 168, 76, 0.1);
+    border-color: rgba(201, 168, 76, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(201, 168, 76, 0.2);
+}
+
+.service-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--accent-gold);
+}
+
+.service-item p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.client-list {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(201, 168, 76, 0.08);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Value Add Section */
+.value-add-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.05) 0%, rgba(26, 26, 26, 0.4) 100%);
+}
+
+.value-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.value-card-large {
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.1) 0%, rgba(26, 26, 26, 0.3) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    animation: slideInUp 0.8s ease;
+}
+
+.value-card-large:nth-child(1) { animation-delay: 0s; }
+.value-card-large:nth-child(2) { animation-delay: 0.1s; }
+.value-card-large:nth-child(3) { animation-delay: 0.2s; }
+.value-card-large:nth-child(4) { animation-delay: 0.3s; }
+
+.value-card-large:hover {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.15) 0%, rgba(26, 26, 26, 0.5) 100%);
+    border-color: rgba(201, 168, 76, 0.5);
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(201, 168, 76, 0.3);
+}
+
+.value-card-large h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--accent-gold);
+}
+
+.value-card-large p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.cta-centered {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInUp 0.8s ease 0.3s both;
+    opacity: 0;
+}
+
+.cta-secondary {
+    display: inline-block;
+    padding: 14px 40px;
+    background: transparent;
+    border: 2px solid var(--accent-gold);
+    border-radius: 6px;
+    color: var(--accent-gold);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-secondary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent-gold);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.cta-secondary:hover {
+    color: var(--bg-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(201, 168, 76, 0.3);
+}
+
+.cta-secondary:hover::before {
+    transform: scaleX(1);
+}
+
 /* Contact Section */
 .contact-section {
     padding: 140px 0;
