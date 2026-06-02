@@ -59,8 +59,8 @@
           stroke="#F5E8D8" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.6"/>
   </g>
 
-  <!-- Text: Chastto -->
-  <text x="210" y="210" font-family="Georgia, serif" font-size="72" font-style="italic" fill="#C9A84C" font-weight="300" letter-spacing="2">Chastto</text>
+  <!-- Text: Charlie's -->
+  <text x="160" y="210" font-family="Georgia, serif" font-size="72" font-style="italic" fill="#C9A84C" font-weight="300" letter-spacing="2">Charlie's</text>
 
   <!-- Text: Events -->
   <text x="800" y="210" font-family="Georgia, serif" font-size="72" font-style="italic" fill="#C9A84C" font-weight="300" letter-spacing="2">Events</text>
