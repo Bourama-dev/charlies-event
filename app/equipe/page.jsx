@@ -44,6 +44,13 @@ export default function EquipePage() {
 
       <section className="team-members-section">
         <div className="container">
+          <div className="team-image-section">
+            <img
+              src="/images/team/equipe-complet.jpg"
+              alt="Notre équipe complète"
+              className="team-image"
+            />
+          </div>
           <h2 className="section-title">Nos Professionnels</h2>
           <p className="section-lead">Chaque membre de notre équipe apporte son expertise et sa passion à vos projets</p>
 

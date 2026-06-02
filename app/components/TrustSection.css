@@ -48,6 +48,11 @@
   max-height: 80px;
 }
 
+.client-logo img.brand-logo {
+  object-fit: contain;
+  object-position: center;
+}
+
 .trust-badges {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
