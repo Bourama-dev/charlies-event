@@ -1,0 +1,119 @@
+.contact-section {
+  padding: 80px 20px;
+  background: var(--bg-dark);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.contact-info h3 {
+  color: var(--accent-gold);
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.contact-info strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-info a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--text-white);
+}
+
+.credentials {
+  border-top: 1px solid rgba(201, 168, 76, 0.1);
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--bg-surface);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  border-radius: 4px;
+  padding: 15px;
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.btn-submit {
+  padding: 15px;
+  background: var(--accent-gold);
+  border: 2px solid var(--accent-gold);
+  color: var(--bg-dark);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background: transparent;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info {
+    animation: slideInUp 0.8s ease-out;
+  }
+
+  .contact-form {
+    animation: slideInUp 0.8s ease-out 0.1s both;
+  }
+}
