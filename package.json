@@ -1,0 +1,12 @@
+{
+  "name": "charlies-events-premium",
+  "version": "2.0.0",
+  "description": "Site événementiel premium - Charlie's Events",
+  "author": "Claude Code",
+  "license": "MIT",
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --directory src",
+    "build": "echo 'Static site ready for deployment'",
+    "serve": "python3 -m http.server 3000 --directory src"
+  }
+}
