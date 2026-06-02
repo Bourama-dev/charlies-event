@@ -1952,6 +1952,158 @@ body {
     line-height: 1.7;
 }
 
+/* Team Departments Section */
+.team-departments {
+    padding: 100px 20px;
+}
+
+.department-section {
+    margin-bottom: 100px;
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.department-section:last-of-type {
+    border-bottom: none;
+}
+
+.department-section.alt {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.02) 0%, rgba(26, 26, 26, 0.2) 100%);
+    padding: 60px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.department-header {
+    margin-bottom: 50px;
+    animation: slideInUp 0.8s ease;
+}
+
+.department-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.department-desc {
+    font-size: 16px;
+    color: var(--accent-gold);
+    font-style: italic;
+    margin: 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    padding: 35px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.08) 0%, rgba(26, 26, 26, 0.2) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.4s ease;
+    animation: scaleIn 0.6s ease;
+}
+
+.team-card:nth-child(1) { animation-delay: 0s; }
+.team-card:nth-child(2) { animation-delay: 0.1s; }
+.team-card:nth-child(3) { animation-delay: 0.2s; }
+.team-card:nth-child(4) { animation-delay: 0.3s; }
+
+.team-card:hover {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.15) 0%, rgba(26, 26, 26, 0.4) 100%);
+    border-color: var(--accent-gold);
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(201, 168, 76, 0.3);
+}
+
+.team-avatar {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.team-card:nth-child(2) .team-avatar { animation-delay: 0.3s; }
+.team-card:nth-child(3) .team-avatar { animation-delay: 0.6s; }
+.team-card:nth-child(4) .team-avatar { animation-delay: 0.9s; }
+
+.team-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.team-role {
+    font-size: 13px;
+    color: var(--accent-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.team-bio {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Team Values Section */
+.team-values {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.05) 0%, rgba(26, 26, 26, 0.3) 100%);
+    border-top: 1px solid rgba(201, 168, 76, 0.2);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.values-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.value-box {
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.1) 0%, rgba(26, 26, 26, 0.3) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    animation: slideInUp 0.8s ease;
+}
+
+.value-box:nth-child(1) { animation-delay: 0s; }
+.value-box:nth-child(2) { animation-delay: 0.1s; }
+.value-box:nth-child(3) { animation-delay: 0.2s; }
+.value-box:nth-child(4) { animation-delay: 0.3s; }
+
+.value-box:hover {
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.15) 0%, rgba(26, 26, 26, 0.5) 100%);
+    border-color: var(--accent-gold);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(201, 168, 76, 0.2);
+}
+
+.value-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--accent-gold);
+    margin-bottom: 15px;
+}
+
+.value-box p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
 .contact-section::before {
     content: '';
     position: absolute;
