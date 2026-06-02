@@ -5,9 +5,9 @@
   "author": "Claude Code",
   "license": "MIT",
   "scripts": {
-    "dev": "python3 -m http.server 8000 --directory src",
-    "build": "echo 'Static site ready for deployment'",
-    "serve": "python3 -m http.server 3000 --directory src"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "main": "index.js",
   "repository": {
