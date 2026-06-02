@@ -84,21 +84,26 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
-// Scroll animations
-const observer = new IntersectionObserver((entries) => {
+// Enhanced scroll animations
+const animationObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.animationPlayState = 'running';
+            animationObserver.unobserve(entry.target);
         }
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.concept-card, .sector-card, .portfolio-item, .testimonial-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease';
-    observer.observe(el);
+// Elements with staggered animations
+const elementsToAnimate = document.querySelectorAll(
+    '.section-title, .concept-card, .sector-card, .portfolio-item, ' +
+    '.testimonial-card, .client-logo, .badge, .filter-btn, ' +
+    '.contact-form input, .contact-form textarea, .form-section'
+);
+
+elementsToAnimate.forEach(el => {
+    el.style.animationPlayState = 'paused';
+    animationObserver.observe(el);
 });
 
 // Smooth scroll for nav links
