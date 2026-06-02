@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .text-light { font-family: 'Playfair Display', serif; font-size: 32px; fill: #9CA3AF; font-weight: 400; }
+      .text-gold { font-family: 'Playfair Display', serif; font-size: 32px; fill: #C9A84C; font-weight: 600; }
+      .s-large { font-family: 'Playfair Display', serif; font-size: 80px; fill: #C9A84C; font-weight: 400; }
+    </style>
+  </defs>
+  
+  <!-- Charlie's text -->
+  <text x="10" y="45" class="text-light">Charlie</text>
+  
+  <!-- Large stylized S -->
+  <text x="85" y="70" class="s-large">S</text>
+  
+  <!-- Events text -->
+  <text x="130" y="45" class="text-gold">Events</text>
+  
+  <!-- Decorative line under -->
+  <line x1="10" y1="80" x2="280" y2="80" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+</svg>

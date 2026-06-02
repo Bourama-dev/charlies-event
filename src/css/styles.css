@@ -54,15 +54,40 @@ body {
 }
 
 .navbar-logo {
-    font-size: 24px;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
-.logo-text {
-    background: linear-gradient(135deg, var(--accent-gold), var(--text-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.navbar-logo-img {
+    height: 50px;
+    width: auto;
+    max-width: 150px;
+    transition: var(--transition);
+}
+
+.logo-link:hover .navbar-logo-img {
+    filter: brightness(1.2);
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    max-width: 180px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+
+.footer-logo:hover {
+    opacity: 1;
 }
 
 .nav-menu {
