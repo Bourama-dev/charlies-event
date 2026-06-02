@@ -6,17 +6,24 @@ import './PortfolioSection.css';
 const portfolioItems = [
   {
     category: 'animations',
-    title: 'Animation Famille - Centre Commercial',
-    subtitle: 'Concept La Ferme d\'Arthus et Zora',
-    gradient: 'linear-gradient(135deg, #C9A84C 0%, #8B7D4E 100%)',
-    placeholder: 'Animation Famille'
+    title: 'Animation Artiste - Spectacle Immersif',
+    subtitle: 'Performance artistique captivante',
+    image: '/images/portfolio/artiste.jpg',
+    alt: 'Spectacle artiste'
   },
   {
     category: 'spectacles',
-    title: 'Spectacle Musical - Dans les Étoiles',
-    subtitle: 'Production musicale professionnelle',
-    gradient: 'linear-gradient(135deg, #6D5BCE 0%, #4A2D94 100%)',
-    placeholder: 'Spectacle Musical'
+    title: 'Spectacle Musical - Bulle Magique',
+    subtitle: 'Expérience interactive enchantée',
+    image: '/images/portfolio/artiste-bulle.jpg',
+    alt: 'Spectacle bulle magique'
+  },
+  {
+    category: 'animations',
+    title: 'Animation Noël - Événement Festif',
+    subtitle: 'Réjouissances hivernales inoubliables',
+    image: '/images/portfolio/noel.jpg',
+    alt: 'Animation Noël'
   },
   {
     category: 'events',
@@ -24,13 +31,6 @@ const portfolioItems = [
     subtitle: 'Animation d\'entreprise créative',
     gradient: 'linear-gradient(135deg, #FF6B6B 0%, #C92A2A 100%)',
     placeholder: 'Événement Corporate'
-  },
-  {
-    category: 'animations',
-    title: 'Animation Enfants - Événement Saisonnier',
-    subtitle: 'Noël en centre commercial',
-    gradient: 'linear-gradient(135deg, #4ECDC4 0%, #1E8B85 100%)',
-    placeholder: 'Animation Enfants'
   },
   {
     category: 'spectacles',
@@ -88,12 +88,20 @@ export default function PortfolioSection() {
         <div className="portfolio-grid">
           {filteredItems.map((item, index) => (
             <div key={index} className="portfolio-item">
-              <div
-                className="portfolio-image portfolio-placeholder"
-                style={{ background: item.gradient }}
-              >
-                <span className="placeholder-text">{item.placeholder}</span>
-              </div>
+              {item.image ? (
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  className="portfolio-image"
+                />
+              ) : (
+                <div
+                  className="portfolio-image portfolio-placeholder"
+                  style={{ background: item.gradient }}
+                >
+                  <span className="placeholder-text">{item.placeholder}</span>
+                </div>
+              )}
               <div className="portfolio-info">
                 <h3>{item.title}</h3>
                 <p>{item.subtitle}</p>

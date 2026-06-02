@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <img src="/logo-new.svg" alt="Charlie's Events" className="footer-logo" />
+          <img src="/logo-new.png" alt="Charlie's Events" className="footer-logo" />
           <p>Agence événementielle premium spécialisée en animations, spectacles et événements. L'excellence à chaque instant.</p>
         </div>
         <div className="footer-section">

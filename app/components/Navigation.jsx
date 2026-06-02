@@ -20,7 +20,7 @@ export default function Navigation() {
       <div className="navbar-container">
         <div className="navbar-logo">
           <Link href="/" className="logo-link">
-            <img src="/logo-new.svg" alt="Charlie's Events" className="navbar-logo-img" />
+            <img src="/logo-new.png" alt="Charlie's Events" className="navbar-logo-img" />
           </Link>
         </div>
         <button
