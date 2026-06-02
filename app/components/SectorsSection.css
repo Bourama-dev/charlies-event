@@ -1,0 +1,75 @@
+.sectors-section {
+  padding: 80px 20px;
+  background: var(--bg-surface);
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sector-card {
+  background: var(--bg-dark);
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-gold);
+  transition: all 0.3s ease;
+  animation: slideInUp 0.8s ease-out;
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(201, 168, 76, 0.15);
+}
+
+.sector-card h3 {
+  color: var(--text-primary);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.sector-card p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.sector-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sector-features li {
+  color: var(--text-secondary);
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 14px;
+}
+
+.sector-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sectors-section {
+    padding: 40px 20px;
+  }
+
+  .sectors-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sector-card {
+    padding: 30px;
+  }
+}

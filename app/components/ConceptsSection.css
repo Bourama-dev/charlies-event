@@ -1,0 +1,72 @@
+.concepts-section {
+  padding: 80px 20px;
+  background: var(--bg-dark);
+}
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.concept-card {
+  background: var(--bg-surface);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  transition: all 0.3s ease;
+  animation: slideInUp 0.8s ease-out;
+}
+
+.concept-card:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  box-shadow: 0 10px 40px rgba(201, 168, 76, 0.15);
+  transform: translateY(-5px);
+}
+
+.concept-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.concept-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.concept-card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.concept-link {
+  color: var(--accent-gold);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.concept-link:hover {
+  transform: translateX(5px);
+  color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  .concepts-section {
+    padding: 40px 20px;
+  }
+
+  .concepts-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .concept-card {
+    padding: 30px;
+  }
+}
